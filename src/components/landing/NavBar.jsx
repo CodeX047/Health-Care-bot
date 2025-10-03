@@ -17,7 +17,7 @@ const NavBar = () => {
             </div>
             <span className="text-primary">Health Care Bot</span>
           </div>
-          <Button onClick={onEnterApp}>
+          <Button onClick={onEnterApp} className="px-4 py-2 bg-primary text-white rounded-md cursor-pointer">
             Launch App
           </Button>
         </div>

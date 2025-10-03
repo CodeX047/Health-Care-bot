@@ -62,7 +62,7 @@ const Hero = () => {
               <div>
                 <Button
                   onClick={onEnterApp}
-                  className="px-8 py-3 text-lg hover:scale-[1.02] transform transition"
+                  className="px-8 py-3 text-lg hover:scale-[1.02] transform transition cursor-pointer"
                 >
                   Start Chatting Now
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -75,7 +75,7 @@ const Hero = () => {
               <div>
                 <Button
                   variant="outline"
-                  className="px-8 py-3 text-lg hover:scale-[1.02] transform transition"
+                  className="px-8 py-3 text-lg hover:scale-[1.02] transform transition cursor-pointer"
                 >
                   Learn More
                 </Button>

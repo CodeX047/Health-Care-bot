@@ -10,8 +10,6 @@ const CTA = () => {
 
   return (
     <section className="py-16 relative overflow-hidden bg-primary">
-      
-
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
         <div className="space-y-6">
           <h2 className="text-3xl text-white">Ready to Get Started?</h2>
@@ -24,7 +22,7 @@ const CTA = () => {
             <Button
               onClick={onEnterApp}
               variant="secondary"
-              className="px-8 py-3 text-lg transform hover:-translate-y-0.5 transition"
+              className="px-8 py-3 text-lg transform hover:-translate-y-0.5 transition cursor-pointer"
             >
               Launch Healthcare AI Bot
               <ArrowRight className="ml-2 h-5 w-5" />

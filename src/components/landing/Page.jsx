@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import Hero from './Hero'
 import Feature from './Feature'
 import Trust from './Trust'
+import CTA from './CTA'
 
 const Page = () => {
   
@@ -12,6 +13,7 @@ const Page = () => {
       <Hero />
       <Feature />
       <Trust />
+      <CTA />
     </main>
   )
 }

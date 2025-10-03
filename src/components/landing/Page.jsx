@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import Hero from './Hero'
 
 const Page = () => {
+  
   return (
     <main className='min-h-screen bg-background'>
       <NavBar />

@@ -30,11 +30,9 @@ const features = [
 const stats = [
   { number: "24/7", label: "Availability" },
   { number: "1000+", label: "Health Topics" },
-  { number: "50+", label: "Rural Communities Served" },
-  { number: "95%", label: "User Satisfaction" },
 ];
 
-export {
+export default {
   features,
   stats
 }

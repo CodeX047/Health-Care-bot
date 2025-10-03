@@ -4,6 +4,7 @@ import Hero from './Hero'
 import Feature from './Feature'
 import Trust from './Trust'
 import CTA from './CTA'
+import Footer from './Footer'
 
 const Page = () => {
   
@@ -14,6 +15,7 @@ const Page = () => {
       <Feature />
       <Trust />
       <CTA />
+      <Footer />
     </main>
   )
 }

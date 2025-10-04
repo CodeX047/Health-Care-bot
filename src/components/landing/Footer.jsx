@@ -1,23 +1,12 @@
-import React, { useState } from "react";
 import { Heart, Github, Mail, ArrowUp } from "lucide-react";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (!email) return;
-    setSubscribed(true);
-    setTimeout(() => setEmail(""), 1500);
-  };
-
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <footer className="bg-white border-t border-border py-8">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <div className="flex items-center justify-between gap-6">
           <div className="flex items-center space-x-3">
             <div className="bg-primary rounded-full p-2 animate-pulse-fast">
               <Heart className="h-4 w-4 text-white" />
@@ -32,7 +21,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-end space-x-4">
+          <div className="flex items-center space-x-4 justify-end">
             <a
               href="https://github.com/CodeX047/Health-Care-bot"
               target="_blank"

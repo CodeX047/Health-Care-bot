@@ -3,12 +3,12 @@ import { BriefcaseMedical } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const onEnterApp = () => {
-  window.location.href = "/home";
+  window.location.href = "/ChatInterface";
 };
 
 const NavBar = () => {
   return (
-    <nav className="bg-white border-b border-border shadow-sm">
+    <nav className="border-b border-border shadow-sm sticky top-0 z-50 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto py-4 px-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">

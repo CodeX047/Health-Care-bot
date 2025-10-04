@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Stats from "./../../../Constant/index.jsx";
@@ -30,10 +31,6 @@ function useCountUp(target, duration = 1200) {
   return value;
 }
 
-const onEnterApp = () => {
-  window.location.href = "/home";
-};
-
 const Hero = () => {
   const statsArray = Array.isArray(Stats)
     ? Stats
@@ -60,25 +57,28 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 items-start">
               <div>
-                <Button
-                  onClick={onEnterApp}
-                  className="px-8 py-3 text-lg hover:scale-[1.02] transform transition cursor-pointer"
-                >
-                  Start Chatting Now
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                <Link to="/chat">
+                  <Button
+                    className="px-8 py-3 text-lg hover:scale-[1.02] transform transition cursor-pointer"
+                  >
+                    Start Chatting Now
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
                 <div className="text-xs text-muted-foreground mt-2">
                   Quick, anonymous medical guidance
                 </div>
               </div>
 
               <div>
-                <Button
-                  variant="outline"
+                <Link to='/learn-more'>
+                  <Button
+                    variant="outline"
                   className="px-8 py-3 text-lg hover:scale-[1.02] transform transition cursor-pointer"
-                >
+                  >
                   Learn More
                 </Button>
+                </Link>
                 <div className="text-xs text-muted-foreground mt-2">
                   How the assistant works and what to expect
                 </div>

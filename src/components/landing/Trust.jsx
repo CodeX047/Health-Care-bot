@@ -35,14 +35,14 @@ const Trust = () => {
             </div>
           </div>
 
-          <div className="mt-6">
+          {/* <div className="mt-6">
             <a
               href="#contact"
               className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-white hover:opacity-95"
             >
               Learn about safety
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

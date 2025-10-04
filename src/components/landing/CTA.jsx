@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const onEnterApp = () => {
-  window.location.href = "/home";
-};
 
 const CTA = () => {
 
@@ -19,14 +16,15 @@ const CTA = () => {
           </p>
 
           <div className="flex items-center justify-center gap-4 flex-col sm:flex-row">
-            <Button
-              onClick={onEnterApp}
-              variant="secondary"
-              className="px-8 py-3 text-lg transform hover:-translate-y-0.5 transition cursor-pointer"
-            >
-              Launch Healthcare AI Bot
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link to="/chat">
+              <Button
+                variant="secondary"
+                className="px-8 py-3 text-lg transform hover:-translate-y-0.5 transition cursor-pointer"
+              >
+                Launch Healthcare AI Bot
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

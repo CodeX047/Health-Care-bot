@@ -1,10 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BriefcaseMedical } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const onEnterApp = () => {
-  window.location.href = "/ChatInterface";
-};
 
 const NavBar = () => {
   return (
@@ -17,9 +14,11 @@ const NavBar = () => {
             </div>
             <span className="text-primary">Health Care Bot</span>
           </div>
-          <Button onClick={onEnterApp} className="px-4 py-2 bg-primary text-white rounded-md cursor-pointer">
-            Launch App
-          </Button>
+          <Link to="/chat">
+            <Button className="px-4 py-2 bg-primary text-white rounded-md cursor-pointer">
+              Launch App
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>

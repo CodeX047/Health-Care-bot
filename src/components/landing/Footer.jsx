@@ -4,7 +4,7 @@ const Footer = () => {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <footer className="bg-white border-t border-border py-8">
+    <footer className="bg-background border-t border-border py-8">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between gap-6">
           <div className="flex items-center space-x-3">

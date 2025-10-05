@@ -39,7 +39,7 @@ const features = [
 
 const stats = [
   { number: "24/7", label: "Availability" },
-  { number: "1000+", label: "Health Topics" },
+  { number: "100+", label: "Health Topics" },
 ];
 
 const howItWorks = [

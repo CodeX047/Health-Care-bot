@@ -9,10 +9,7 @@ const NavBar = () => {
       <div className="max-w-6xl mx-auto py-4 px-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="bg-primary rounded-full p-2">
-              <BriefcaseMedical className="text-white w-5 h-5" />
-            </div>
-            <span className="text-primary">Health Care Bot</span>
+            <img src="/image/logo.png" alt="Health Care Bot" width={170} />
           </div>
           <Link to="/chat">
             <Button className="px-4 py-2 bg-primary text-white rounded-md cursor-pointer">

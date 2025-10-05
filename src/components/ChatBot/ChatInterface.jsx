@@ -128,17 +128,7 @@ const ChatInterface = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <FaHeartbeat className="text-white text-2xl" />
-              </div>
-              <div className="ml-4">
-                <h1 className="text-2xl font-bold text-primary">
-                  Health Care Bot
-                </h1>
-                <p className="text-sm text-muted-foreground">
-                  Your Rural Healthcare Assistant
-                </p>
-              </div>
+              <img src="/image/logo.png" alt="Health Care Bot" width={200} />
             </div>
             <LanguageSelector
               selectedLanguage={language}

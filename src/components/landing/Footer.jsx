@@ -8,17 +8,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between gap-6">
           <div className="flex items-center space-x-3">
-            <div className="bg-primary rounded-full p-2 animate-pulse-fast">
-              <Heart className="h-4 w-4 text-white" />
-            </div>
-            <div>
-              <span className="text-foreground font-semibold">
-                Rural Healthcare AI Bot
-              </span>
-              <div className="text-sm text-muted-foreground">
-                Empowering rural communities
-              </div>
-            </div>
+            <img src="/image/logo.png" alt="Health Care Bot" width={170} />
           </div>
 
           <div className="flex items-center space-x-4 justify-end">
@@ -44,8 +34,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-6 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Rural Healthcare AI Bot — Made with{" "}
-          <span className="inline-block align-middle text-destructive">❤</span>
+          © {new Date().getFullYear()} Rural Healthcare AI Bot
         </div>
       </div>
     </footer>

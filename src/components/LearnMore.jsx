@@ -51,10 +51,7 @@ const LearnMore = () => {
                 </Button>
               </Link>
               <div className="flex items-center space-x-3">
-                <div className="bg-primary rounded-full p-2">
-                  <Heart className="h-5 w-5 text-white" />
-                </div>
-                <span className="text-primary">Rural Healthcare AI Bot</span>
+                <img src="/image/logo.png" alt="Health Care Bot" width={170} />
               </div>
             </div>
             <Link to="/chat">

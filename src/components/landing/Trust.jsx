@@ -20,7 +20,7 @@ const Trust = () => {
           </p>
 
           {/* trust badges */}
-          <div className="flex items-center justify-center space-x-6 mt-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-6">
             <div className="flex items-center space-x-2">
               <CheckCircle className="h-5 w-5 text-primary" />
               <span className="text-sm text-foreground">Evidence-based</span>
@@ -34,15 +34,6 @@ const Trust = () => {
               <span className="text-sm text-foreground">Local resources</span>
             </div>
           </div>
-
-          {/* <div className="mt-6">
-            <a
-              href="#contact"
-              className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-white hover:opacity-95"
-            >
-              Learn about safety
-            </a>
-          </div> */}
         </div>
       </div>
     </section>

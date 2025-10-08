@@ -43,7 +43,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-5xl text-foreground leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl text-foreground leading-tight">
                 Healthcare Access for
                 <span className="text-primary"> Rural Communities</span>
               </h1>
@@ -115,7 +115,7 @@ const Hero = () => {
                 loading="lazy"
                 src="https://images.unsplash.com/photo-1742106850780-fbcc50b1ef5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydXJhbCUyMGhlYWx0aGNhcmUlMjBjb21tdW5pdHl8ZW58MXx8fHwxNzU5MzkyNjU3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="Rural healthcare community"
-                className="w-full h-96 object-cover will-change-transform"
+                className="w-full h-64 sm:h-80 lg:h-96 object-cover will-change-transform"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
             </div>

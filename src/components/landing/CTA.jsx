@@ -9,7 +9,7 @@ const CTA = () => {
     <section className="py-16 relative overflow-hidden bg-primary">
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
         <div className="space-y-6">
-          <h2 className="text-3xl text-white">Ready to Get Started?</h2>
+          <h2 className="text-2xl sm:text-3xl text-white">Ready to Get Started?</h2>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
             Join thousands of rural community members who rely on our AI
             healthcare assistant for trusted health information and guidance.

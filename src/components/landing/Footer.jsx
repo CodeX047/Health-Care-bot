@@ -1,4 +1,4 @@
-import { Heart, Github, Mail, ArrowUp } from "lucide-react";
+import { Github, Mail, ArrowUp } from "lucide-react";
 
 const Footer = () => {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-white border-t border-border py-8">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex items-center justify-between gap-6">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center space-x-3">
             <img src="/image/logo.png" alt="Health Care Bot" width={170} />
           </div>
@@ -20,7 +20,10 @@ const Footer = () => {
             >
               <Github className="w-4 h-4 text-foreground" />
             </a>
-            <a href="#contact" className="p-2 rounded-md hover:bg-muted/20">
+            <a
+              href={"mailto:vishal.patil@adypu.edu.in"}
+              className="p-2 rounded-md hover:bg-muted/20"
+            >
               <Mail className="w-4 h-4 text-foreground" />
             </a>
             <button

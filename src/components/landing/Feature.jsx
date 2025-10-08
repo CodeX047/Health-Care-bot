@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import Features_data from "./../../../Constant/index.jsx";
 
 const Feature = () => {
@@ -17,7 +16,7 @@ const Feature = () => {
       />
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center space-y-4 mb-12">
-          <h2 className="text-4xl lg:text-5xl font-semibold text-foreground leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground leading-tight">
             Comprehensive healthcare assistance for
             <span className="text-primary"> rural communities</span>
           </h2>

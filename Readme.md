@@ -79,26 +79,26 @@ Healthcare Bot is an AI-powered healthcare assistant designed specifically for r
 ### Installation
 
 1. Clone the repository:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/CodeX047/Health-Care-bot.git
-   \`\`\`
+   ```
 
 2. Install dependencies:
-   \`\`\`bash
+   ``` bash
    cd Health-Care-bot
    npm install
-   \`\`\`
+   ```
 
 3. Set up environment variables:
-   Create a \`.env\` file in the root directory and add:
-   \`\`\`env
+   Create a `.env` file in the root directory and add:
+   ```bash
    VITE_GOOGLE_API_KEY=your_gemini_api_key_here
-   \`\`\`
+   ```
 
 4. Start the development server:
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+    ```
 
 ## Usage Guide 📖
 
@@ -120,7 +120,7 @@ Healthcare Bot is an AI assistant designed to provide basic healthcare informati
 We welcome contributions to improve Healthcare Bot! Please follow these steps:
 
 1. Fork the repository
-2. Create your feature branch (\`git checkout -b feature/AmazingFeature\`)
-3. Commit your changes (\`git commit -m 'Add some AmazingFeature'\`)
-4. Push to the branch (\`git push origin feature/AmazingFeature\`)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request

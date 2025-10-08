@@ -35,6 +35,18 @@ const features = [
     description:
       "Book virtual appointments with healthcare providers without traveling long distances.",
   },
+  {
+    icon: <Users className="h-8 w-8" />,
+    title: "Rural-Focused",
+    description:
+      "Specifically designed for rural communities with limited healthcare access and longer travel distances.",
+  },
+  {
+    icon: <Shield className="h-8 w-8" />,
+    title: "Privacy First",
+    description:
+      "Your conversations are secure and private. We don't store personal health information.",
+  },
 ];
 
 const stats = [

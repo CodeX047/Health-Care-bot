@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Page from "./components/landing/page";
 import ChatInterface from "./components/ChatBot/ChatInterface";
 import LearnMore from "./components/LearnMore";
+import SmsInterface from "./components/SMS/SmsInterface";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const App = () => {
     {
       path: "/learn-more",
       element: <LearnMore />,
+    },
+    {
+      path: "/sms",
+      element: <SmsInterface />,
     },
   ]);
 

@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { Chat } from "@google/genai";
 import { Language, Sender, createMessage } from "../../types/chat";
 import { UI_TEXTS, INITIAL_MESSAGES } from "../../constants/chat";
 import {
@@ -124,14 +123,14 @@ const ChatInterface = () => {
 
   return (
     <div className="flex flex-col h-screen w-full bg-background">
-      <div className="p-4 bg-white border-b border-border shadow-sm">
+      <div className="p-2 sm:p-4 bg-white border-b border-border shadow-sm">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-between mb-2 sm:mb-4">
             <div className="flex items-center">
               <img
                 src="/image/logo.png"
                 alt="Health Care Bot"
-                className="w-32 sm:w-40 md:w-48 "
+                className="w-24 sm:w-32 md:w-40"
               />
             </div>
             <LanguageSelector
@@ -140,20 +139,20 @@ const ChatInterface = () => {
             />
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 mt-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-2 sm:mt-4">
             {services.map((service) => (
               <button
                 key={service.id}
                 onClick={() => handleServiceClick(service.id)}
-                className="flex items-center justify-center p-3 sm:p-4 rounded-lg transition-all hover:shadow-lg"
+                className="flex items-center justify-center p-2 sm:p-3 rounded-lg transition-all hover:shadow-lg"
                 style={{ backgroundColor: service.bgColor }}
               >
                 <service.icon
-                  className="text-xl sm:text-2xl md:text-3xl mr-2"
+                  className="text-lg sm:text-xl md:text-2xl mr-2"
                   style={{ color: service.color }}
                 />
                 <span
-                  className="font-medium text-sm sm:text-base md:text-lg"
+                  className="font-medium text-xs sm:text-sm md:text-base"
                   style={{ color: service.color }}
                 >
                   {service.name}
@@ -182,7 +181,7 @@ const ChatInterface = () => {
             )}
           </div>
 
-          <div className="p-4 bg-white border-t border-border">
+          <div className="p-2 sm:p-4 bg-white border-t border-border">
             <div className="max-w-4xl mx-auto">
               <form
                 onSubmit={(e) => {
@@ -196,18 +195,18 @@ const ChatInterface = () => {
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
                   placeholder="Describe your symptoms..."
-                  className="flex-1 p-3 sm:p-4 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-sm sm:text-base"
+                  className="flex-1 p-2 sm:p-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-sm sm:text-base"
                 />
                 <button
                   type="submit"
                   disabled={isLoading || !inputValue.trim()}
-                  className="bg-primary text-white px-4 py-3 sm:px-6 sm:py-4 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm sm:text-base"
+                  className="bg-primary text-white px-3 py-2 sm:px-4 sm:py-3 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm sm:text-base"
                 >
                   {uiText.send}
                 </button>
               </form>
               {isLoading && (
-                <p className="text-xs sm:text-sm text-gray-500 mt-2 text-center">
+                <p className="text-xs text-gray-500 mt-2 text-center">
                   ⚡ For emergencies, call 108 immediately
                 </p>
               )}

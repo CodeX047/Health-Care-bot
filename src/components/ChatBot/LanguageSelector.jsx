@@ -13,7 +13,7 @@ const LanguageSelector = ({ selectedLanguage, onLanguageChange }) => {
       <select
         value={selectedLanguage}
         onChange={(e) => onLanguageChange(e.target.value)}
-        className="appearance-none bg-white border border-green-300 text-green-800 font-semibold py-1 px-3 pr-8 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500"
+        className="appearance-none bg-background border border-border text-foreground font-semibold py-2 px-4 pr-8 rounded-full focus:outline-none focus:ring-2 focus:ring-primary text-sm sm:text-base"
       >
         {languages.map((lang) => (
           <option key={lang.code} value={lang.code}>
@@ -21,7 +21,7 @@ const LanguageSelector = ({ selectedLanguage, onLanguageChange }) => {
           </option>
         ))}
       </select>
-      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-green-700">
+      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-foreground">
         <svg
           className="fill-current h-4 w-4"
           xmlns="http://www.w3.org/2000/svg"

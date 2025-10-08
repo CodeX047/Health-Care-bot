@@ -73,9 +73,9 @@ const MessageBubble = ({ message }) => {
   return (
     <div className={containerClasses}>
       <div
-        className={`p-4 rounded-2xl max-w-sm md:max-w-2xl break-words leading-relaxed ${bubbleClasses}`}
+        className={`p-3 sm:p-4 rounded-2xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl break-words leading-relaxed ${bubbleClasses}`}
       >
-        <div className="space-y-1">
+        <div className="space-y-1 text-sm sm:text-base">
           {message.text
             .split("\n")
             .map((line, index) => renderLine(line, index))}
